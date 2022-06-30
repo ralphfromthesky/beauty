@@ -6,14 +6,14 @@
 }
 
 .mainContainer {
-    background-image: url(/images/background.jpg);
+    background-image: url(./images/background.jpg);
     background-size: cover;
     height: 100vh;
 }
 
-.container {
+.container {fi
     margin-top: 20px;
-    background-image: url(/images/33333333.png);
+    background-image: url(./images/33333333.png);
     background-size: cover;
     height: 55vh;
     width: 100%;
