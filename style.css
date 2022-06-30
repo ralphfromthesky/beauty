@@ -6,6 +6,7 @@
 }
 
 .mainContainer {
+    position: relative;
     background-image: url(./images/background.jpg);
     background-size: cover;
     height: 100vh;
@@ -122,20 +123,24 @@ i {
     margin-top: 10px;
     font-size: .7rem;
 }
+
 .mainContainer.last {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .mainContainer.last {
     display: flex;
     justify-content: end;
     align-items: flex-end;
 }
+
 .last {
     text-align: center;
     margin-top: 4%;
 }
+
 @media screen and (max-width: 1024px) {
     .container {
         height: 55vh;
@@ -162,16 +167,6 @@ i {
     }
 
 
-}
-
-@media screen and (max-width: 900px) {
-    ul {
-        display: none;
-    }
-
-    img {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -201,6 +196,7 @@ i {
     .containers {
         display: block;
     }
+
     .last {
         margin-top: 27%;
     }
@@ -212,6 +208,33 @@ i {
     }
 }
 
+@media screen and (max-width: 900px) {
+    ul {
+        display: none;
+    }
+
+    img {
+        display: block;
+    }
+
+    .navLink {
+        position: absolute;
+        text-align: end;
+        top: 5%;
+        width: 100%;
+        background-color: violet;
+        font-size: 1rem;
+        height: 23vh;
+        line-height: 3;
+        padding-right: 10%;
+        display: none;
+    }
+
+    .navLink.show {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 820px) {
     .navbar {
         height: 5vh;
@@ -220,9 +243,11 @@ i {
     .container {
         height: 23vh;
     }
-.last {
-    margin-top: 32%;
-}
+
+    .last {
+        margin-top: 32%;
+    }
+
     .text {
         display: block;
         font-size: .8rem;
@@ -240,6 +265,11 @@ i {
 
     .containers {
         display: block;
+    }
+
+    .navLink {
+        height: 16vh;
+        padding-right: 20%;
     }
 }
 
@@ -264,6 +294,11 @@ i {
         font-size: .7rem;
         margin-right: 5%;
     }
+
+    .navLink {
+        height: 18vh;
+        padding-right: 20%;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -283,7 +318,7 @@ i {
 }
 
 @media screen and (max-width: 480px) {
-   
+
     .social {
         display: grid;
         grid-template-columns: 1fr;
@@ -306,6 +341,7 @@ i {
         display: block;
         font-size: .9rem;
     }
+
     .last {
         margin: 0;
     }
@@ -319,6 +355,13 @@ i {
     .texts {
         font-size: .9rem;
     }
+
+    .navLink {
+        line-height: 2;
+        height: 15vh;
+        padding-right: 18%;
+        top: 6%;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -328,6 +371,12 @@ i {
 
     .texts {
         font-size: .8rem;
+    }
+    
+    .navLink {
+        height: 15vh;
+        line-height: 2;
+        top: 8%;
     }
 }
 
@@ -339,6 +388,7 @@ i {
     .texts {
         font-size: .9rem;
     }
+    
 }
 
 @media screen and (max-width: 393px) {
@@ -359,6 +409,12 @@ i {
     .texts {
         font-size: .8rem;
     }
+
+    .navLink {
+        line-height: 1.6;
+        height: 16vh;
+        top: 9%;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -369,6 +425,11 @@ i {
     .texts {
         font-size: .9rem;
     }
+    .navLink {
+        height: 17vh;
+        line-height: 2;
+        top: 8%;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -378,6 +439,10 @@ i {
 }
 
 @media screen and (max-width: 280px) {
+    .mainContainer {
+        height: 100%;
+    }
+
     .navbar {
         padding-top: 10px;
         height: 6vh;
